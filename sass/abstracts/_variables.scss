@@ -1,7 +1,24 @@
+// COLORS
 $color-primary: #219ebc;
 $color-primary-light: #8ecae6;
 $color-primary-dark: #023047;
 
+$color-grey-light-1: #f7f7f7;
+
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+// BORDER RADIUS
+$section-border-radius: 2rem;
+
+//BOX SHADOW
+$box-shadow: 0px 1rem 2rem rgba($color-black, 0.3);
+
+// SECTION MARGIN BOTTOM
+$section-margin-bottom: 4rem;
