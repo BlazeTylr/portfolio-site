@@ -95,26 +95,6 @@ body {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
-.header {
-  border-radius: 2rem 2rem 0 0;
-  position: relative;
-  height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(142, 202, 230, 0.9), rgba(2, 48, 71, 0.9)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  .header__profile-box {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%); }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
 .profile-pic {
   border-radius: 50%;
   display: block;
