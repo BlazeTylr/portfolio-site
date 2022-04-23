@@ -63,6 +63,31 @@
   }
 }
 
+.heading-portfolio {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  color: $color-white;
+  padding: 10rem 0;
+  // margin-bottom: 50rem;
+  // background-image: linear-gradient(
+  //   to right,
+  //   $color-primary-light,
+  //   $color-primary-dark
+  // );
+  // -webkit-background-clip: text;
+  // color: transparent;
+  letter-spacing: 6px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-1.1rem) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
@@ -75,4 +100,8 @@
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+
+.omnifood-pic {
+  width: 20rem;
 }
