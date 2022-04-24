@@ -79,3 +79,11 @@
     transform: translateY(0);
   }
 }
+
+.btn-skew {
+  transform: skewX(12deg);
+
+  &:hover {
+    transform: skewX(12deg);
+  }
+}

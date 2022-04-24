@@ -133,6 +133,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u--text {
+  text-align: center; }
+
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
@@ -141,6 +144,73 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.about {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transform: skewX(-12deg); }
+  .about__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+    overflow: hidden; }
+  .about__img {
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.5s; }
+  .about__text {
+    transform: skewX(12deg); }
+  .about__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden; }
+  .about:hover .about__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .about:hover .about__img {
+    transform: scale(1.2);
+    filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -205,6 +275,11 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn-skew {
+  transform: skewX(12deg); }
+  .btn-skew:hover {
+    transform: skewX(12deg); }
+
 .project-box {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 1.5rem;
@@ -251,7 +326,7 @@ body {
 
 .header {
   position: relative;
-  height: 95rem;
+  height: 85rem;
   background-image: linear-gradient(to right bottom, rgba(142, 202, 230, 0.9), rgba(2, 48, 71, 0.9)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center; }
@@ -268,10 +343,8 @@ body {
     text-align: center; }
 
 .section-about {
-  background-color: #f7f7f7;
-  padding: 5rem 0;
-  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.9), rgba(119, 119, 119, 0.9)), url(../img/hero.jpg); }
+  padding: 15rem 0;
+  position: relative; }
 
 .section-project {
   padding: 0 0 20rem;

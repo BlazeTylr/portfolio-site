@@ -1,9 +1,10 @@
 .header {
   // border-radius: 2rem 2rem 0 0;
   // border-radius: $section-border-radius;
+  // box-shadow: $box-shadow;
   position: relative;
   // height: 85vh;
-  height: 95rem;
+  height: 85rem;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.9),
@@ -12,9 +13,7 @@
     url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
-  // box-shadow: $box-shadow;
   // margin-bottom: $section-margin-bottom;
-
   // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__profile-box {
