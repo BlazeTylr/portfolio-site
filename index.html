@@ -10,11 +10,31 @@
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/bs-favicon-512x512.png">
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <title>Balazs Szabo | Frontend Developer</title>
 </head>
 
 <body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">MENU</label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Portfolio</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <!-- <div class="header__logo-box">
             <img src="img/logo-bs.png" alt="Logo" class="header__logo">
@@ -27,7 +47,7 @@
                 <span class="heading-primary--main">Balazs Szabo</span>
                 <span class="heading-primary--sub">Frontend Developer</span>
             </h1>
-            <a href="#" class="btn btn--white btn--animated">Portfolio</a>
+            <a href="#section-project" class="btn btn--white btn--animated">Portfolio</a>
         </div>
         <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
     </header>
@@ -40,7 +60,7 @@
             </div>
         </div> -->
     </section>
-    <section class="section-about">
+    <section class="section-about" id="section-about">
         <div class="bg-video">
             <video class="bg-video__content" autoplay muted loop>
                 <source src="img/video.mp4" type="video/mp4">
@@ -98,7 +118,7 @@
             <a href="https://blazetylr.github.io/omnifood/" class="btn-text">Link &rarr;</a>
         </div> -->
     </section>
-    <section class="section-project">
+    <section class="section-project" id="section-project">
         <h2 class="heading-portfolio">Portfolio</h2>
         <div class="row">
             <div class="col-1-of-4">
@@ -149,7 +169,8 @@
                             </div>
                         </div>
                     </div>
-                    <a href="https://github.com/BlazeTylr?tab=repositories" class="btn-portfolio">Visit GitHub for more
+                    <a href="https://github.com/BlazeTylr?tab=repositories" class="btn-portfolio">Visit my GitHub for
+                        more
                         &rarr;</a>
     </section>
     <footer class="footer">
