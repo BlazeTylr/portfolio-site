@@ -196,6 +196,10 @@ body {
   .about:hover .about__img {
     transform: scale(1.2);
     filter: blur(3px) brightness(80%); }
+  .about__btn:not(:last-child) {
+    margin-right: 5rem; }
+  .about__links {
+    text-align: left; }
 
 .bg-video {
   position: absolute;
@@ -204,7 +208,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.1;
   overflow: hidden; }
   .bg-video__content {
     height: 100%;
@@ -279,16 +283,43 @@ body {
   .btn-skew:hover {
     transform: skewX(12deg); }
 
+.btn-portfolio:link, .btn-portfolio:visited {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.6rem;
+  font-size: 1.6rem;
+  color: #eee;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-portfolio:hover {
+  background-color: #eee;
+  color: #333;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  margin-left: 50%;
+  transform: translateX(-50%); }
+
+.btn-portfolio:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .ca3-scroll-down-arrow {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  opacity: 0; }
 
 .ca3-scroll-down-link {
+  opacity: 0.5;
+  padding-bottom: 10rem;
   cursor: pointer;
   height: 60px;
   width: 80px;
-  margin: 0px 0 0 -25px;
+  margin: 0px 0 0 -40px;
   line-height: 60px;
   position: absolute;
   left: 50%;
@@ -352,6 +383,44 @@ body {
   .project-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem; }
+  .footer__list {
+    list-style: none;
+    text-align: center; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    background-color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #219ebc;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: scale(1.3); }
+  .footer__copyright {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    width: 95%;
+    text-align: center; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -384,6 +453,13 @@ body {
   background-image: linear-gradient(to right bottom, rgba(142, 202, 230, 0.9), rgba(2, 48, 71, 0.9)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 5rem;
+    opacity: 0.8; }
   .header__profile-box {
     position: absolute;
     top: 10%;
@@ -401,6 +477,7 @@ body {
   position: relative; }
 
 .section-project {
-  padding: 0 0 20rem;
+  position: relative;
+  padding: 0 0 10rem;
   background-image: linear-gradient(to right bottom, rgba(142, 202, 230, 0.9), rgba(2, 48, 71, 0.9)), url(../img/project.jpg);
   background-size: cover; }

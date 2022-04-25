@@ -56,4 +56,14 @@
     transform: scale(1.2);
     filter: blur(3px) brightness(80%);
   }
+
+  &__btn {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+
+  &__links {
+    text-align: left;
+  }
 }
