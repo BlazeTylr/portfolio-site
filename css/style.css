@@ -99,6 +99,9 @@ body {
   width: 80rem;
   margin-top: 10rem;
   margin-bottom: 8rem; }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      width: 36rem; } }
   .heading-primary--main {
     display: block;
     font-size: 5.5rem;
@@ -204,6 +207,14 @@ body {
   font-size: 1.6rem;
   border-radius: 1rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .about {
+      width: 90%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .about {
+      transform: skewX(0); } }
   .about__shape {
     width: 15rem;
     height: 15rem;
@@ -215,12 +226,18 @@ body {
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
     overflow: hidden; }
+    @media (max-width: 37.5em) {
+      .about__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .about__img {
     height: 100%;
     transform: scale(1);
     transition: all 0.5s; }
   .about__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .about__text {
+        transform: skewX(0); } }
   .about__caption {
     position: absolute;
     top: 50%;
@@ -419,6 +436,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .project-box {
+      padding: 2rem; } }
   .project-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -426,6 +446,9 @@ body {
     background-image: linear-gradient(to right, #8ecae6, #023047);
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .project-box__icon {
+        margin-bottom: 0; } }
   .project-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
