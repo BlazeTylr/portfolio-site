@@ -521,7 +521,8 @@ body {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-bottom: 6rem; } }
+        margin-bottom: 6rem;
+        padding: 0; } }
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem; } }
@@ -533,10 +534,9 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.25em) {
+      @media (max-width: 75em) {
         .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
+          margin-bottom: 2rem; } }
       @media (max-width: 37.5em) {
         .row [class^="col-"]:not(:last-child) {
           margin-bottom: 2rem; } }
@@ -731,3 +731,6 @@ ion-icon {
   padding: 0 0 10rem;
   background-image: linear-gradient(to right bottom, rgba(142, 202, 230, 0.9), rgba(2, 48, 71, 0.9)), url(../img/project.jpg);
   background-size: cover; }
+  @media (max-width: 75em) {
+    .section-project {
+      padding: 2rem; } }

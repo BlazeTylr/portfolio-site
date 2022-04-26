@@ -28,4 +28,8 @@
     url(../img/project.jpg);
   background-size: cover;
   // clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+
+  @include respond(tab-land) {
+    padding: 2rem;
+  }
 }
