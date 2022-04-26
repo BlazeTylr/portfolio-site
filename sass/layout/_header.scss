@@ -15,6 +15,7 @@
   background-position: center;
   // margin-bottom: $section-margin-bottom;
   // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  overflow: hidden;
 
   &__logo-box {
     position: absolute;

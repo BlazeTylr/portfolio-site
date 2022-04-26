@@ -573,7 +573,8 @@ body {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(142, 202, 230, 0.9), rgba(2, 48, 71, 0.9)), url(../img/hero.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  overflow: hidden; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -626,6 +627,10 @@ body {
     .navigation__button {
       top: 3rem;
       right: 3rem; } }
+  @media (max-height: 20em) {
+    .navigation__button {
+      top: 2rem;
+      right: 2rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -645,6 +650,10 @@ body {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
+  @media (max-height: 20em) {
+    .navigation__background {
+      top: 2.5rem;
+      right: 2.5rem; } }
 
 .navigation__nav {
   height: 100vh;

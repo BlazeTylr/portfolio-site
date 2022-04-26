@@ -25,6 +25,11 @@
       top: 3rem;
       right: 3rem;
     }
+
+    @include respond(phone-land) {
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   &__background {
@@ -49,6 +54,10 @@
     @include respond(phone) {
       top: 3.5rem;
       right: 3.5rem;
+    }
+    @include respond(phone-land) {
+      top: 2.5rem;
+      right: 2.5rem;
     }
   }
 
