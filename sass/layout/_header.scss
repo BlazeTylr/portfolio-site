@@ -36,6 +36,9 @@
     @include respond(tab-port) {
       top: 10%;
     }
+    @include respond(phone-land) {
+      opacity: 0;
+    }
   }
 
   .profile-pic {

@@ -103,6 +103,9 @@ body {
     .heading-primary {
       width: 36rem;
       margin-bottom: 6rem; } }
+  @media (max-height: 20em) {
+    .heading-primary {
+      margin: 2rem 0 0; } }
   .heading-primary--main {
     display: block;
     font-size: 5.5rem;
@@ -116,6 +119,10 @@ body {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-size: 5rem; } }
+    @media (max-height: 20em) {
+      .heading-primary--main {
+        padding-top: 6rem;
+        margin-bottom: 0; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -578,6 +585,9 @@ body {
     @media (max-width: 56.25em) {
       .header__profile-box {
         top: 10%; } }
+    @media (max-height: 20em) {
+      .header__profile-box {
+        opacity: 0; } }
   @media (max-width: 37.5em) {
     .header .profile-pic {
       height: 14rem;
@@ -636,7 +646,7 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   z-index: 20;
   opacity: 0;
   width: 0;
@@ -676,7 +686,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  left: 0; }
 
 .navigation__icon {
   position: relative;
