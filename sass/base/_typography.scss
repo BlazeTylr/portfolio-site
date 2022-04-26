@@ -103,6 +103,10 @@
     transform: translateY(-1.1rem) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
+
+  @include respond(tab-port) {
+    padding: 8rem 0 6rem;
+  }
 }
 
 .heading-tertiary {

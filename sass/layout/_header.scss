@@ -32,6 +32,10 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
+
+    @include respond(tab-port) {
+      top: 15%;
+    }
   }
 
   &__text-box {

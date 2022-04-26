@@ -11,6 +11,10 @@
   //     rgba($color-grey-dark, 0.9)
   //   ),
   //   url(../img/hero.jpg);
+
+  @include respond(tab-port) {
+    padding: 12rem 0;
+  }
 }
 
 .section-project {
