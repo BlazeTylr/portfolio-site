@@ -577,7 +577,7 @@ body {
     transform: translate(-50%, -10%); }
     @media (max-width: 56.25em) {
       .header__profile-box {
-        top: 15%; } }
+        top: 10%; } }
   @media (max-width: 37.5em) {
     .header .profile-pic {
       height: 14rem;
