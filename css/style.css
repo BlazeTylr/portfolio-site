@@ -568,6 +568,10 @@ body {
     @media (max-width: 56.25em) {
       .header__profile-box {
         top: 15%; } }
+  @media (max-width: 37.5em) {
+    .header .profile-pic {
+      height: 14rem;
+      width: 14rem; } }
   .header__text-box {
     position: absolute;
     top: 50%;

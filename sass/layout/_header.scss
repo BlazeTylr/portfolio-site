@@ -38,6 +38,13 @@
     }
   }
 
+  .profile-pic {
+    @include respond(phone) {
+      height: 14rem;
+      width: 14rem;
+    }
+  }
+
   &__text-box {
     position: absolute;
     top: 50%;
