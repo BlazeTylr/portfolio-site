@@ -733,4 +733,4 @@ ion-icon {
   background-size: cover; }
   @media (max-width: 75em) {
     .section-project {
-      padding: 2rem; } }
+      padding: 0 0 8rem; } }
