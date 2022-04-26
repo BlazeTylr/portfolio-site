@@ -24,6 +24,7 @@
 
   @include respond(phone) {
     width: 36rem;
+    margin-bottom: 6rem;
   }
 
   &--main {

@@ -101,7 +101,8 @@ body {
   margin-bottom: 8rem; }
   @media (max-width: 37.5em) {
     .heading-primary {
-      width: 36rem; } }
+      width: 36rem;
+      margin-bottom: 6rem; } }
   .heading-primary--main {
     display: block;
     font-size: 5.5rem;
@@ -258,6 +259,9 @@ body {
     filter: blur(3px) brightness(80%); }
   .about__btn:not(:last-child) {
     margin-right: 5rem; }
+    @media (max-width: 37.5em) {
+      .about__btn:not(:last-child) {
+        margin-right: 2rem; } }
   .about__links {
     text-align: left; }
 
@@ -346,8 +350,11 @@ body {
 
 .btn-skew {
   transform: skewX(12deg); }
+  @media (max-width: 56.25em) {
+    .btn-skew {
+      transform: skewX(0); } }
   .btn-skew:hover {
-    transform: skewX(12deg); }
+    transform: skewX(0); }
 
 .btn-portfolio:link, .btn-portfolio:visited {
   margin-left: 50%;
