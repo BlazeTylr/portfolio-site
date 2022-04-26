@@ -103,7 +103,7 @@ body {
     .heading-primary {
       width: 36rem;
       margin-bottom: 6rem; } }
-  @media (max-height: 20em) {
+  @media (max-height: 24em) {
     .heading-primary {
       margin: 2rem 0 0; } }
   .heading-primary--main {
@@ -119,10 +119,10 @@ body {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-size: 5rem; } }
-    @media (max-height: 20em) {
+    @media (max-height: 24em) {
       .heading-primary--main {
-        padding-top: 4rem;
-        margin-bottom: 0;
+        padding-top: 2rem;
+        margin-bottom: 1rem;
         font-size: 4.5rem; } }
   .heading-primary--sub {
     display: block;
@@ -133,7 +133,7 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
-    @media (max-height: 20em) {
+    @media (max-height: 24em) {
       .heading-primary--sub {
         font-size: 1.8rem; } }
 
@@ -218,7 +218,7 @@ body {
   transform: skewX(-12deg); }
   @media (max-width: 56.25em) {
     .about {
-      width: 90%;
+      width: 110%;
       padding: 4rem;
       padding-left: 7rem; } }
   @media (max-width: 37.5em) {
@@ -590,7 +590,7 @@ body {
     @media (max-width: 56.25em) {
       .header__profile-box {
         top: 10%; } }
-    @media (max-height: 20em) {
+    @media (max-height: 24em) {
       .header__profile-box {
         opacity: 0; } }
   @media (max-width: 37.5em) {
@@ -627,7 +627,7 @@ body {
     .navigation__button {
       top: 3rem;
       right: 3rem; } }
-  @media (max-height: 20em) {
+  @media (max-height: 24em) {
     .navigation__button {
       top: 2rem;
       right: 2rem; } }
@@ -650,7 +650,7 @@ body {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
-  @media (max-height: 20em) {
+  @media (max-height: 24em) {
     .navigation__background {
       top: 2.5rem;
       right: 2.5rem; } }

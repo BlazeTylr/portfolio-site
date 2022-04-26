@@ -54,7 +54,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     } // 1800px +
   }
   @if $breakpoint == phone-land {
-    @media (max-height: 20em) {
+    @media (max-height: 24em) {
       @content;
     }
   }

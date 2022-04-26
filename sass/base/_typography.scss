@@ -46,8 +46,8 @@
       font-size: 5rem;
     }
     @include respond(phone-land) {
-      padding-top: 4rem;
-      margin-bottom: 0;
+      padding-top: 2rem;
+      margin-bottom: 1rem;
       font-size: 4.5rem;
     }
   }
