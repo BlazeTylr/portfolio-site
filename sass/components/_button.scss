@@ -13,6 +13,10 @@
     @include respond(tab-port) {
       margin-top: 6rem;
     }
+
+    @include respond(phone) {
+      margin-top: 0;
+    }
   }
 
   &:hover {

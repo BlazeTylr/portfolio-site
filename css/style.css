@@ -287,6 +287,9 @@ body {
   @media (max-width: 56.25em) {
     .btn:link, .btn:visited {
       margin-top: 6rem; } }
+  @media (max-width: 37.5em) {
+    .btn:link, .btn:visited {
+      margin-top: 0; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
