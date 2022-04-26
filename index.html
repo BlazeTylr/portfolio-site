@@ -12,6 +12,10 @@
     <link rel="shortcut icon" type="image/png" href="img/bs-favicon-512x512.png">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <script>function closeNav() {
+            document.getElementById("navi-toggle").checked = false;
+        }
+        defer</script>
     <title>Balazs Szabo | Frontend Developer</title>
 </head>
 
@@ -25,19 +29,24 @@
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Portfolio</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">
+                <li class="navigation__item"><a href="#header" class="navigation__link" onclick="closeNav()">Home</a>
+                </li>
+                <li class="navigation__item"><a href="#section-about" class="navigation__link"
+                        onclick="closeNav()">About</a></li>
+                <li class="navigation__item"><a href="#section-project" class="navigation__link"
+                        onclick="closeNav()">Portfolio</a>
+                </li>
+                <li class="navigation__item"><a href="https://www.linkedin.com/in/balazs-szabo-466737196/"
+                        class="navigation__link">
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">
+                <li class="navigation__item"><a href="https://twitter.com/blztylr" class="navigation__link">
                         <ion-icon name="logo-twitter"></ion-icon>
                     </a></li>
             </ul>
         </nav>
     </div>
-    <header class="header">
+    <header class="header" id="header">
         <!-- <div class="header__logo-box">
             <img src="img/logo-bs.png" alt="Logo" class="header__logo">
         </div> -->
@@ -82,8 +91,8 @@
                 </figure>
                 <div class="about__text">
                     <h3 class="heading-tertiary u-margin-bottom-small">Would you like to know more?</h3>
-                    <p>If you interested to hire me or just simply would like to know more about me please have a look
-                        at my CV or visit me on my social channels.</p>
+                    <p>If you interested to hire me or just simply would like to know more about me please visit me
+                        on my social channels to get in touch.</p>
                 </div>
 
                 <div class="u-center-text u-margin-top-small about__links">
@@ -93,8 +102,8 @@
                     <a href="https://www.linkedin.com/in/balazs-szabo-466737196/"
                         class="btn-text btn-skew about__btn">LinkedIn
                         &rarr;</a>
-                    <a href="https://drive.google.com/u/4/uc?id=1IXTAgEPnzB_zP2S-ioJbvSsUHt57bJ97&export=download"
-                        class="btn-text btn-skew about__btn">C V &rarr;</a>
+                    <!-- <a href="https://drive.google.com/u/4/uc?id=1IXTAgEPnzB_zP2S-ioJbvSsUHt57bJ97&export=download"
+                        class="btn-text btn-skew about__btn">C V &rarr;</a> -->
                 </div>
             </div>
 
@@ -183,6 +192,8 @@
             <div class="col-1-of-2">
                 <div class="footer__navigation">
                     <ul class="footer__list">
+                        <li class="footer__item"><a href="#header" class="footer__link">Home</a>
+                        </li>
                         <li class="footer__item"><a href="https://twitter.com/blztylr" class="footer__link">Twitter</a>
                         </li>
                         <li class="footer__item"><a href="https://www.linkedin.com/in/balazs-szabo-466737196/"
