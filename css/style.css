@@ -121,8 +121,9 @@ body {
         font-size: 5rem; } }
     @media (max-height: 20em) {
       .heading-primary--main {
-        padding-top: 6rem;
-        margin-bottom: 0; } }
+        padding-top: 4rem;
+        margin-bottom: 0;
+        font-size: 4.5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -132,6 +133,9 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
+    @media (max-height: 20em) {
+      .heading-primary--sub {
+        font-size: 1.8rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;

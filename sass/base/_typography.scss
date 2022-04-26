@@ -46,8 +46,9 @@
       font-size: 5rem;
     }
     @include respond(phone-land) {
-      padding-top: 6rem;
+      padding-top: 4rem;
       margin-bottom: 0;
+      font-size: 4.5rem;
     }
   }
 
@@ -60,6 +61,9 @@
 
     @include respond(phone) {
       letter-spacing: 0.5rem;
+    }
+    @include respond(phone-land) {
+      font-size: 1.8rem;
     }
   }
 }
