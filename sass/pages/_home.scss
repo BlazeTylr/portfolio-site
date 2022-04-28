@@ -1,16 +1,6 @@
 .section-about {
   padding: 15rem 0;
   position: relative;
-  // background-color: $color-grey-light-1;
-  // padding: 5rem 0;
-  // box-shadow: $box-shadow;
-  // // border-radius: $section-border-radius;
-  // background-image: linear-gradient(
-  //     to right bottom,
-  //     rgba($color-grey-light-1, 0.9),
-  //     rgba($color-grey-dark, 0.9)
-  //   ),
-  //   url(../img/hero.jpg);
 
   @include respond(tab-port) {
     padding: 12rem 0;
@@ -27,7 +17,6 @@
     ),
     url(../img/project.jpg);
   background-size: cover;
-  // clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 
   @include respond(tab-land) {
     padding: 0 0 8rem;
