@@ -15,7 +15,7 @@
       rgba($color-primary-light, 0.9),
       rgba($color-primary-dark, 0.9)
     ),
-    url(../img/project.jpg);
+    url(../img/project.webp);
   background-size: cover;
 
   @include respond(tab-land) {
