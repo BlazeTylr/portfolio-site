@@ -73,9 +73,13 @@
 }
 
 .project {
-  margin: 3rem;
-  margin-bottom: 6rem;
+  margin: 3rem 3rem 6rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(38rem, 2fr));
   grid-gap: 7rem;
+
+  @include respond(phone) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

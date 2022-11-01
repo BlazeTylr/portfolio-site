@@ -513,11 +513,14 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .project {
-  margin: 3rem;
-  margin-bottom: 6rem;
+  margin: 3rem 3rem 6rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(38rem, 2fr));
   grid-gap: 7rem; }
+  @media (max-width: 37.5em) {
+    .project {
+      margin-left: 1rem;
+      margin-right: 1rem; } }
 
 .header {
   position: relative;
