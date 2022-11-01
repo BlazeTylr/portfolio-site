@@ -1,7 +1,6 @@
 .section-about {
   padding: 15rem 0;
   position: relative;
-
   @include respond(tab-port) {
     padding: 12rem 0;
   }

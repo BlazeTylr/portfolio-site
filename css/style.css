@@ -391,16 +391,17 @@ body {
 .project-box {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 2rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  min-height: 32rem; }
   @media (max-width: 56.25em) {
     .project-box {
       padding: 2rem; } }
   .project-box__icon {
-    font-size: 6rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #8ecae6, #023047);
@@ -481,18 +482,18 @@ body {
     content: "";
     display: table;
     clear: both; }
-  .row [class^="col-"] {
+  .row [class^='col-'] {
     float: left; }
-    .row [class^="col-"]:not(:last-child) {
+    .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
       @media (max-width: 75em) {
-        .row [class^="col-"]:not(:last-child) {
+        .row [class^='col-']:not(:last-child) {
           margin-bottom: 4rem; } }
       @media (max-width: 37.5em) {
-        .row [class^="col-"]:not(:last-child) {
+        .row [class^='col-']:not(:last-child) {
           margin-bottom: 4rem; } }
     @media (max-width: 56.25em) {
-      .row [class^="col-"] {
+      .row [class^='col-'] {
         width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
@@ -510,6 +511,13 @@ body {
     width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.project {
+  margin: 3rem;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(38rem, 2fr));
+  grid-gap: 7rem; }
 
 .header {
   position: relative;
